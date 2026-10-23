@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character Encoding & Responsive Viewport Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Mini Games Hub - Learn about the project architecture, game levels, player counts, and web development technologies used.">
+  <title>About & Tech Stack - Mini Games Hub</title>
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">🎮 MiniGames Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-2 rounded-pill">Documentation & Specs</span>
+        <h1 class="display-6 fw-bold mt-2">About Mini Games Hub</h1>
+        <p class="text-muted">A hands-on front-end web development showcase combining HTML, CSS, JavaScript, and Bootstrap 5.</p>
+      </div>
+
+      <!-- SECTION 1: PROJECT OVERVIEW -->
+      <section class="about-card">
+        <h2 class="h4 fw-bold mb-3 text-primary">Project Overview</h2>
+        <p class="about-description text-secondary">
+          Mini Games Hub is an interactive, browser-based gaming suite designed to demonstrate fundamental and modern front-end web engineering skills. Players can register their session, pick from a curated collection of classic browser games, inspect the official rules, and play in real time with dynamic DOM feedback and result history.
+        </p>
+        <p class="text-muted small mb-0">
+          <strong>Note on Data Persistence:</strong> This project operates entirely client-side. Scores, history, and active player objects are stored in memory and reset on page reload by intentional design.
+        </p>
+      </section>
+
+      <!-- SECTION 2: GAMES COMPARISON TABLE (Requirement: Table listing games, level, and player count) -->
+      <section class="about-card">
+        <h2 class="h4 fw-bold mb-3 text-primary">Game Specifications & Comparison</h2>
+        <p class="text-muted small">Summary of all available mini games, difficulty levels, player support, and core JavaScript concepts exercised:</p>
+        
+        <div class="table-responsive">
+          <table class="table table-hover table-custom border">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Game Title</th>
+                <th scope="col">Difficulty Level</th>
+                <th scope="col">Number of Players</th>
+                <th scope="col">Core Concepts Practiced</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class="fw-semibold">Number Guessing</td>
+                <td><span class="badge badge-easy">Easy</span></td>
+                <td>1 Player (vs Computer)</td>
+                <td>Math.random(), try / catch / throw, loops, input validation</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td class="fw-semibold">Rock-Paper-Scissors</td>
+                <td><span class="badge badge-easy">Easy</span></td>
+                <td>1 Player (vs Computer)</td>
+                <td>JavaScript Map, switch cases, ternary operators, flexbox</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td class="fw-semibold">Memory Card Flip</td>
+                <td><span class="badge badge-medium">Medium</span></td>
+                <td>1 Player (Solo Challenge)</td>
+                <td>JavaScript Set, array shuffling, setTimeout, 3D CSS flip</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td class="fw-semibold">Tic-Tac-Toe (Bonus)</td>
+                <td><span class="badge badge-medium">Medium</span></td>
+                <td>2 Players (Pass & Play)</td>
+                <td>Winning combinations matrix, @keyframes animation, DOM lock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 3: TECHNOLOGIES USED (Requirement: Ordered or unordered list of technologies) -->
+      <section class="about-card">
+        <h2 class="h4 fw-bold mb-3 text-primary">Technologies & Techniques Used</h2>
+        <p class="text-muted small">This project incorporates modern web standards and architectural best practices:</p>
+        
+        <div class="row g-4 mt-1">
+          <div class="col-md-6">
+            <h3 class="h6 fw-bold text-dark">Frontend Foundations</h3>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Semantic HTML5 (header, nav, main, section, footer)
+                <span class="badge bg-success rounded-pill">Structure</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Bootstrap 5 via CDN (Responsive Grid, Navbar Collapse)
+                <span class="badge bg-primary rounded-pill">Framework</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Vanilla CSS3 (Custom Variables, 3D Transforms, Keyframes)
+                <span class="badge bg-info text-dark rounded-pill">Styling</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Google Fonts Typography (Poppins)
+                <span class="badge bg-secondary rounded-pill">Design</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="h6 fw-bold text-dark">JavaScript Capabilities</h3>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Data Structures: ES6 Set and Map
+                <span class="badge bg-warning text-dark rounded-pill">Data</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Object-Oriented Programming: Player Class
+                <span class="badge bg-secondary rounded-pill">OOP</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                JSON string serialization & JSON.parse()
+                <span class="badge bg-dark rounded-pill">JSON</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                DOM Node Lifecycle: createElement, appendChild, remove
+                <span class="badge bg-success rounded-pill">DOM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <h4 class="h6 fw-bold text-muted text-uppercase mb-2">Technology Tags</h4>
+          <ul class="tech-badge-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap 5</li>
+            <li>JavaScript ES6+</li>
+            <li>DOM Manipulation</li>
+            <li>Regex Validation</li>
+            <li>3D CSS Transforms</li>
+            <li>Web Audio API</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 4: CONTACT & DEPLOYMENT INFO -->
+      <section class="about-card">
+        <h2 class="h4 fw-bold mb-3 text-primary">Deployment & Project Submission</h2>
+        <p class="text-muted">
+          This project is structured for zero-configuration static hosting on <strong>GitHub Pages</strong> or <strong>Netlify</strong>. All file assets, stylesheets, and scripts utilize relative URLs to guarantee reliable cross-platform execution.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="index.html" class="btn btn-primary px-4">Back to Games Hub</a>
+          <a href="register.html" class="btn btn-outline-primary px-4">Player Registration</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="mb-2 fw-semibold text-white">🎮 Mini Games Hub &copy; 2026</p>
+      <p class="small text-muted mb-0">Built with Semantic HTML5, CSS3, Vanilla JavaScript, and Bootstrap 5.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
